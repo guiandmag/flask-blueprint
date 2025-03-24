@@ -135,7 +135,7 @@ class ModuleRouter:
         """
         if name[-1:] == ".":
             name = name[:-1]
-        if name[-1:] is not "/":
+        if name[-1:] != "/":
             name = "/" + name
         name = str(name).replace(".", "/")
         return name
